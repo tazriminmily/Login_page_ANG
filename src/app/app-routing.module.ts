@@ -1,12 +1,21 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { LogInComponent } from './log-in/log-in.component';
 
+
+// const routes: Routes = [
+//   {
+//     path: '',
+//     redirectTo: 'pages/login',
+//     pathMatch: 'full',
+    
+//   },
+// ];
 
 const routes: Routes = [
-  // {
-  //   path:'employee-list',
-  //   component:EmployeeListComponent
-  // }
+  { path: '', redirectTo: '/login', pathMatch: 'full' }, 
+  { path: 'login', component: LogInComponent }, 
+ 
 ];
 
 @NgModule({
